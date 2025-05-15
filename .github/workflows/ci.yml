@@ -51,7 +51,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ghcr.io/${{ github.repository_owner }}/taskmasterlite-salon2
+          images: ghcr.io/taskmasterlite-salon2
           tags: |
             type=raw,value=latest
             type=sha,prefix=
