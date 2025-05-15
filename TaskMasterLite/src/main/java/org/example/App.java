@@ -1,8 +1,16 @@
 package org.example;
 
 import java.util.Scanner;
-public class App 
+/**
+ * Classe principale de l'application
+ * Permet à l'utilisateur d'ajouter et de lister des tâches via la console
+ */
+public class App
 {
+    /**
+     * Méthode principale de l'application
+     * @param args : Arguments de la ligne de commande
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         TaskManager manager = new TaskManager();
