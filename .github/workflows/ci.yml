@@ -34,11 +34,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Download JAR artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: taskmaster-lite-jar
-          path: ./TasMasterLite/target
+      - name: maven package
+        uses: mvn -B clean package
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
